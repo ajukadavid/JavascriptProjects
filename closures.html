@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<title> Script Testing </title>
+<meta charset="utf-8">
+<script>
+ function addTo(passed){
+    var add = function(inner){
+        return passed + inner;
+    }
+    return add;
+ }; 
+var addThree = new addTo(3);
+var addSix = new addTo(6);
+
+console.log(addSix(1));
+console.log(addThree(1));
+</script>
+</head>
+
+
+</body>
+</html>

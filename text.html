@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+   <script>
+var person = function(name){
+    return function(age){
+        return function(handsome){
+            if(typeof name === "string" && typeof age === "number" && typeof handsome === "boolean"){
+                console.log("your name is " + name + " and you are old for " + age + " your handsomeness is obviously fucking " + handsome);
+            }else{
+                console.log("input error you fucktard!")
+            }
+        }
+    }
+}
+/* correct input
+var show = new person("David");
+var show2 = show(25);
+var show3 = show2(true);
+// or
+person("david")(25)(true)
+*/
+//wrong input
+// var show = new person(true);
+// var show2 = show("david");
+// var show3 = show2(25);
+// this gives the error code and this too
+//person(true)("david")(25)
+person("david")(25)(false)
+
+
+       </script>
+</head>
+<body>
+   
+</body>
+</html>
